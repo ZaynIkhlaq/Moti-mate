@@ -27,3 +27,7 @@ RESOURCES += \
     Resources.qrc
 
 DISTFILES +=
+QT += network
+QT += widgets network
+CONFIG += c++11
+
