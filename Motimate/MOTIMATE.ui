@@ -1,0 +1,1345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MOTIMATE</class>
+ <widget class="QMainWindow" name="MOTIMATE">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>500</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #7d7d7d;</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="HomePage">
+     <property name="styleSheet">
+      <string notr="true">background-color: #9EC8B9;</string>
+     </property>
+     <widget class="QLabel" name="Logo">
+      <property name="geometry">
+       <rect>
+        <x>55</x>
+        <y>150</y>
+        <width>390</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Slab ExtraBold</family>
+        <pointsize>50</pointsize>
+        <italic>false</italic>
+        <strikeout>false</strikeout>
+        <fontweight>ExtraBold</fontweight>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 800 50pt &quot;Roboto Slab ExtraBold&quot;;
+color: #333333;</string>
+      </property>
+      <property name="text">
+       <string>MOTIMATE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="LetsGoButton">
+      <property name="geometry">
+       <rect>
+        <x>175</x>
+        <y>330</y>
+        <width>150</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 25pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string>Let's Go!</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="InfoButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 25pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string>Info</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="OptionsPage">
+     <property name="styleSheet">
+      <string notr="true">background-color: #9EC8B9;</string>
+     </property>
+     <widget class="QPushButton" name="SetGoalButton">
+      <property name="geometry">
+       <rect>
+        <x>95</x>
+        <y>110</y>
+        <width>310</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 40pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string>Set Goal</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="TrackGoalButton">
+      <property name="geometry">
+       <rect>
+        <x>95</x>
+        <y>190</y>
+        <width>310</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 40pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string>Track Goal</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ReturnButton1">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Images/ReturnArrow.jpg);
+background-position: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="CreditsButton">
+      <property name="geometry">
+       <rect>
+        <x>95</x>
+        <y>430</y>
+        <width>310</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 40pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string>Credits</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="MotivationButton">
+      <property name="geometry">
+       <rect>
+        <x>95</x>
+        <y>30</y>
+        <width>310</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 40pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string>Motivation </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ChallengeButton">
+      <property name="geometry">
+       <rect>
+        <x>95</x>
+        <y>270</y>
+        <width>310</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 40pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string>Challenge</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="CoachButton">
+      <property name="geometry">
+       <rect>
+        <x>95</x>
+        <y>350</y>
+        <width>310</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 40pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string>Coach</string>
+      </property>
+     </widget>
+     <zorder>TrackGoalButton</zorder>
+     <zorder>SetGoalButton</zorder>
+     <zorder>ReturnButton1</zorder>
+     <zorder>CreditsButton</zorder>
+     <zorder>MotivationButton</zorder>
+     <zorder>ChallengeButton</zorder>
+     <zorder>CoachButton</zorder>
+    </widget>
+    <widget class="QWidget" name="SetGoalPage">
+     <property name="styleSheet">
+      <string notr="true">background-color: #9EC8B9;</string>
+     </property>
+     <widget class="QLabel" name="Goaltext">
+      <property name="geometry">
+       <rect>
+        <x>123</x>
+        <y>150</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 500 17pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+
+</string>
+      </property>
+      <property name="text">
+       <string>Goal:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="EnterGoalBox">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>150</y>
+        <width>170</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 15pt &quot;Roboto Slab Medium&quot;;
+color: black;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Deadlinetext">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>181</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 500 16pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+
+</string>
+      </property>
+      <property name="text">
+       <string>Deadline (M/D/Y):</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="EnterDeadlineBox">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>220</y>
+        <width>170</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 15pt &quot;Roboto Slab Medium&quot;;
+color: black;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ReturnButton2">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Images/ReturnArrow.jpg);
+background-position: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="SubmitButton">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>350</y>
+        <width>130</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 20pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string>Submit</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="TrackGoalPage">
+     <property name="styleSheet">
+      <string notr="true">background-color: #9EC8B9;</string>
+     </property>
+     <widget class="QLabel" name="CurrentGoalstext">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>110</y>
+        <width>181</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Slab Medium</family>
+        <pointsize>18</pointsize>
+        <italic>false</italic>
+        <fontweight>Medium</fontweight>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 500 18pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>Current Goals</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ReturnButton3">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Images/ReturnArrow.jpg);
+background-position: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="DaysLeftText">
+      <property name="geometry">
+       <rect>
+        <x>285</x>
+        <y>110</y>
+        <width>171</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 500 18pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+
+</string>
+      </property>
+      <property name="text">
+       <string>Time Left</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="GoalsList">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>150</y>
+        <width>160</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: black;
+border-radius: 4px;
+background-color: #e1e4e8;
+font: 500 12pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+
+</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="DeadlineList">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>150</y>
+        <width>160</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: black;
+border-radius: 4px;
+background-color: #e1e4e8;
+font: 500 12pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+
+</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ChallengePage">
+     <property name="styleSheet">
+      <string notr="true">background-color: #9EC8B9;</string>
+     </property>
+     <widget class="QLineEdit" name="Player1Box">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>150</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 12pt &quot;Roboto Slab Medium&quot;;
+color: black;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Player2Box">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>200</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 12pt &quot;Roboto Slab Medium&quot;;
+color: black;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Player1Label">
+      <property name="geometry">
+       <rect>
+        <x>99</x>
+        <y>150</y>
+        <width>80</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 500 15pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+
+</string>
+      </property>
+      <property name="text">
+       <string>Player 1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Player2Label">
+      <property name="geometry">
+       <rect>
+        <x>99</x>
+        <y>200</y>
+        <width>80</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 500 15pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+
+</string>
+      </property>
+      <property name="text">
+       <string>Player 2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="GoalLabel">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>250</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 500 15pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Challenge:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="GoalBox">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>250</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 12pt &quot;Roboto Slab Medium&quot;;
+color: black;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="AmountBox">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>300</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 12pt &quot;Roboto Slab Medium&quot;;
+color: black;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="AmountLabel">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>300</y>
+        <width>80</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 500 15pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+
+</string>
+      </property>
+      <property name="text">
+       <string>Amount:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PrizeLabel">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>350</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 500 15pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Prize:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="PrizeBox">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>350</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 12pt &quot;Roboto Slab Medium&quot;;
+color: black;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ConfirmButton">
+      <property name="geometry">
+       <rect>
+        <x>195</x>
+        <y>430</y>
+        <width>110</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 15pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string>Confirm</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="TrackButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>221</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 20pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string>Track Challenge</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ReturnButton6">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Images/ReturnArrow.jpg);
+background-position: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="MotivationPage">
+     <property name="styleSheet">
+      <string notr="true">background-color: #9EC8B9;</string>
+     </property>
+     <widget class="QPushButton" name="ReturnButton5">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Images/ReturnArrow.jpg);
+background-position: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="quoteDisplay">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>145</y>
+        <width>200</width>
+        <height>210</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Slab Medium</family>
+        <pointsize>16</pointsize>
+        <italic>false</italic>
+        <fontweight>Medium</fontweight>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 16pt &quot;Roboto Slab Medium&quot;;
+color: black;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Roboto Slab Medium'; font-size:16pt; font-weight:500; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Segoe UI'; font-size:9pt; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::NoTextInteraction</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quoteButton">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>380</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 20pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string>PRESS ME</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="QuotesLable">
+      <property name="geometry">
+       <rect>
+        <x>85</x>
+        <y>80</y>
+        <width>330</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 500 30pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string>Quotes Generator</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="CreditsPage">
+     <property name="styleSheet">
+      <string notr="true">background-color: #9EC8B9;</string>
+     </property>
+     <widget class="QPushButton" name="ReturnButton4">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Images/ReturnArrow.jpg);
+background-position: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="CreditsText">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>80</y>
+        <width>350</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Slab Medium</family>
+        <pointsize>12</pointsize>
+        <italic>false</italic>
+        <kerning>false</kerning>
+        <hintingpreference>PreferDefaultHinting</hintingpreference>
+        <fontweight>Medium</fontweight>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: black;
+border-radius: 4px;
+background-color: #e1e4e8;
+font: 500 12pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="undoRedoEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Roboto Slab Medium'; font-size:12pt; font-weight:500; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:700;&quot;&gt;CREDITS&lt;/span&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Developer: &lt;/span&gt;&lt;span style=&quot; font-size:20pt; font-weight:700;&quot;&gt;Zain Ikhlaq&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:20pt; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Special thanks to &lt;/span&gt;&lt;span style=&quot; font-size:20pt; font-weight:700;&quot;&gt;Coffee&lt;/span&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt; for keeping me awake while working on the Project.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="acceptRichText">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::NoTextInteraction</set>
+      </property>
+     </widget>
+     <zorder>CreditsText</zorder>
+     <zorder>ReturnButton4</zorder>
+    </widget>
+    <widget class="QWidget" name="TrackChallengePage">
+     <property name="styleSheet">
+      <string notr="true">background-color: #9EC8B9;</string>
+     </property>
+     <widget class="QProgressBar" name="P1Progress">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>180</y>
+        <width>300</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 12pt &quot;Roboto Slab Medium&quot;;
+color: black;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="P2Progress">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>310</y>
+        <width>300</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 12pt &quot;Roboto Slab Medium&quot;;
+color: black;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="P1plus">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>180</y>
+        <width>121</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+color: black;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+font: 500 15pt &quot;Roboto Slab Medium&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="P2plus">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>310</y>
+        <width>121</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+color: black;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+font: 500 15pt &quot;Roboto Slab Medium&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="GoalDisplay">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>60</y>
+        <width>220</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 20pt &quot;Roboto Slab Medium&quot;;
+color: black;
+alignment: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ReturnButton7">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Images/ReturnArrow.jpg);
+background-position: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="InfoPage">
+     <property name="styleSheet">
+      <string notr="true">background-color: #9EC8B9;</string>
+     </property>
+     <widget class="QTextEdit" name="InfoLabel">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>100</y>
+        <width>300</width>
+        <height>300</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto Slab Medium</family>
+        <pointsize>16</pointsize>
+        <italic>false</italic>
+        <kerning>true</kerning>
+        <fontweight>Medium</fontweight>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e1e4e8;
+font: 500 16pt &quot;Roboto Slab Medium&quot;;
+color: black;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Roboto Slab Medium'; font-size:16pt; font-weight:500; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;About The App:&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The app is designed to empower and motivate you on your journey of self-improvement. Compete with friends, set goals, track progress, and find daily motivation with the quote generator. This app is your companion in promoting health and fostering friendly competition.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Version 1.0&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This is the very first rudimentary version of the app. Designed entirely in C++ using the Qt Creator Widgets Application and its frameworks. Stock images and text were sourced from the internet, and basic UI samples were created in Figma. &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;For further reference (libraries, toolkits, etc), refer to code.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Build Time: 18-20 hours&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;End Semester Project for FOP (CS-110)&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Instructor: Dr Jaudat Mamoon&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Student: Zain Ikhlaq&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ID: 467999&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::NoTextInteraction</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>40</y>
+        <width>230</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 500 30pt &quot;Roboto Slab Medium&quot;;
+color: #333333;
+text-align: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string>Information</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ReturnButton8">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/Images/ReturnArrow.jpg);
+background-position: center;
+border-color: black;
+border-radius: 4px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
